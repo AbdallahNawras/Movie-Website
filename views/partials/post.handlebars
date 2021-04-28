@@ -1,0 +1,18 @@
+<div class="post" data-price="{{price}}" data-city="{{city}}" data-condition="{{condition}}" data-tooltipText="{{tooltipText}}" data-link="{{link}}">
+    {{!-- Link added  --}}
+    <a href={{link}} target="_blank">
+        <div class="post-contents">
+            <div class="post-image-container">
+                <img src="{{photoURL}}" alt="{{description}}">
+            </div>
+            <div class="post-info-container" style="margin-left: 50%;">
+                {{!-- tooltip added --}}
+                <div class="tooltip">
+                    <a href="#" class="post-title">{{description}}</a> <span class="post-price">${{price}}</span> <span class="post-city">({{city}})</span>
+                    {{!-- change text for the tooltip --}}
+                    <span class="tooltiptext">{{tooltipText}}</span>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>

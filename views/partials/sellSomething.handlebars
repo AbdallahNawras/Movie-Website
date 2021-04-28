@@ -1,0 +1,56 @@
+<button type="button" id="sell-something-button"><i class="fa fa-plus"></i></button>
+
+<div id="modal-backdrop" class="hidden"></div>
+<div id="sell-something-modal" class="hidden">
+  <div class="modal-dialog">
+
+    <div class="modal-header">
+      <h3>Add New Movie</h3>
+      <button type="button" id="modal-close" class="modal-hide-button">&times;</button>
+    </div>
+
+    <div class="modal-body">
+
+      <div class="post-input-element">
+        <label for="post-text-input">Movie Name</label>
+        <input type="text" id="post-text-input"></input>
+      </div>
+
+      <div class="post-input-element">
+        <label for="post-photo-input">Photo URL</label>
+        <input type="text" id="post-photo-input">
+      </div>
+
+      <div class="post-input-element">
+        <label for="post-price-input">Movie Price ($)</label>
+        <input type="number" id="post-price-input">
+      </div>
+
+      <div class="post-input-element">
+        <label for="post-city-input">Movie Type</label>
+        <input type="text" id="post-city-input">
+      </div>
+
+      <div class="post-input-element">
+        <fieldset id="post-condition-fieldset" class="post-fieldset">
+          <legend>Condition</legend>
+          <div>
+            <input type="radio" name="post-condition" id="post-condition-new" value="new" checked>
+            <label for="post-condition-new">New</label>
+          </div>
+          <div>
+            <input type="radio" name="post-condition" id="post-condition-excellent" value="used">
+            <label for="post-condition-excellent">Used</label>
+          </div>
+        </fieldset>
+      </div>
+
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" id="modal-cancel" class="modal-hide-button action-button">Cancel</button>
+      <button type="button" id="modal-accept" class="action-button">Create Post</button>
+    </div>
+
+  </div>
+</div>

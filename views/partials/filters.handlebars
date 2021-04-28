@@ -1,0 +1,43 @@
+<aside class="filter-container">
+
+  <h2>Filters</h2>
+
+  <div class="filter-input-container">
+    <label for="filter-text" class="filter-input-label">Text</label>
+    <input type="text" name="filter-text" id="filter-text" class="filter-input">
+  </div>
+
+  <div class="filter-input-container">
+    <label for="filter-min-price" class="filter-input-label">Price</label>
+    <input type="number" name="filter-min-price" id="filter-min-price" class="filter-input" placeholder="min">
+    <input type="number" name="filter-max-price" id="filter-max-price" class="filter-input" placeholder="max">
+  </div>
+
+  <div class="filter-input-container">
+    <label for="filter-city">Movie Type</label>
+    <select id="filter-city" class="filter-input" name="filter-city">
+      <option selected value="">Any</option>
+      <option>Comedy</option>
+      <option>Horror</option>
+      <option>Kids</option>
+    </select>
+  </div>
+
+  <div class="filter-input-container">
+    <fieldset id="filter-condition" class="filter-fieldset">
+      <legend>Condition</legend>
+      <div>
+        <input type="checkbox" name="filter-condition" id="filter-condition-new" value="new">
+        <label for="filter-condition-new">New</label>
+      </div>
+      <div>
+        <input type="checkbox" name="filter-condition" id="filter-condition-excellent" value="used">
+        <label for="filter-condition-excellent">Used</label>
+      </div>
+     
+    </fieldset>
+  </div>
+
+  <button id="filter-update-button" class="action-button">Update</button>
+
+</aside>

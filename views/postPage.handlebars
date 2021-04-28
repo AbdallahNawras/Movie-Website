@@ -1,0 +1,11 @@
+<main class="content">
+  {{> filters}}
+  <section id="posts">
+    {{#each this}}
+        {{#if price}}
+            {{> post}}
+        {{/if}}
+    {{/each}}
+  </section>
+  {{> sellSomething}}
+</main>
