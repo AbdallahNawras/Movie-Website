@@ -20,6 +20,6 @@
   "homepage": "https://github.com/osu-cs290-f19/master-assignment-5#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^3.1.0"
+    "express-handlebars": "^7.1.2"
   }
 }
